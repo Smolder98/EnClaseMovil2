@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2P1.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenido!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Label  Text="Nombre" FontSize="Title" Margin="5, 0, 5, 0"/>
+        <Entry x:Name="txtnombre" Placeholder="Ingrese nombre" Keyboard="Plain" Margin="5, 0, 5, 0" />
+
+        <Label  Text="Edad" FontSize="Title" Margin="5, 0, 5, 0"/>
+        <Entry x:Name="txtedad" Placeholder="Ingrese edad" Keyboard="Numeric" Margin="5, 0, 5, 0" />
+
+        <Button x:Name="btnmostrar" Text="Mostrar"  Margin="5, 0, 5, 0" Clicked="btnmostrar_Clicked" />
+
+        <Button x:Name="btnpagina" Text="Segunda pagina"  Margin="5, 0, 5, 0" Clicked="btnpagina_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
