@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2P1.Views.ViewEmplePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="empleName" Text="{Binding }"/>
+            <Label x:Name="empleEdad" />
+            <Label x:Name="empleFecha" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

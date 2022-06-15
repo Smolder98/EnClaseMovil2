@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Convertidor="clr-namespace:PM2P1.Convertidor"
+             x:Class="PM2P1.Views.EmplePageCollection"
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Convertidor:ByteArrayToImage x:Key="ByteToImage"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <CollectionView x:Name="listEmple" 
+                            Margin="20"
+                            SelectionMode="Single"
+                            SelectionChanged="listEmple_SelectionChanged">
+
+                <CollectionView.ItemsLayout>
+
+                    <LinearItemsLayout Orientation="Vertical"
+                                       ItemSpacing="10">
+
+                    </LinearItemsLayout>
+
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding id}" />
+                            <Label Text="{Binding nombre}" />
+                            <Label Text="{Binding edad}"/>
+
+                            <Image Source="{Binding foto, Converter={StaticResource ByteToImage}}" WidthRequest="100" HeightRequest="200"/> 
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

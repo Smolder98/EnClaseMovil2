@@ -2,7 +2,6 @@ C:\Users\alico\source\repos\PM2P1\PM2P1\bin\Debug\netstandard2.0\PM2P1.deps.json
 C:\Users\alico\source\repos\PM2P1\PM2P1\bin\Debug\netstandard2.0\PM2P1.dll
 C:\Users\alico\source\repos\PM2P1\PM2P1\bin\Debug\netstandard2.0\ref\PM2P1.dll
 C:\Users\alico\source\repos\PM2P1\PM2P1\bin\Debug\netstandard2.0\PM2P1.pdb
-C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\PM2P1.csproj.AssemblyReference.cache
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\PM2P1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -16,3 +15,8 @@ C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\PM2P1.pdb
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\SecondPage.xaml.g.cs
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\EmplePage.xaml.g.cs
 C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\PrincipalPage.xaml.g.cs
+C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\PM2P1.csproj.AssemblyReference.cache
+C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\ViewEmplePage.xaml.g.cs
+C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\PhotoPage.xaml.g.cs
+C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\EmplePageCollection.xaml.g.cs
+C:\Users\alico\source\repos\PM2P1\PM2P1\obj\Debug\netstandard2.0\Views\MapPage.xaml.g.cs

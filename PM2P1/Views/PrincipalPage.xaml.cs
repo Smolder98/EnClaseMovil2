@@ -19,20 +19,6 @@ namespace PM2P1.Views
             InitializeComponent();
         }
 
-        
-
-        private async void toolMenu1_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new EmplePage());
-        }
-
-        private async void listaEmpleados_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            var Emple = (Empleado)e.Item;
-
-            await DisplayAlert("","Elemento seleccionado: " + Emple.nombre + " Fecha: "+ Emple.fechaIngreso, "OK");
-        }
-
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -43,10 +29,35 @@ namespace PM2P1.Views
             }
             catch (Exception e)
             {
-
+                
             }
 
-            
+        }
+
+        private async void listaEmpleados_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var Emple = (Empleado)e.Item;
+
+            //await DisplayAlert("","Elemento seleccionado: " + Emple.nombre + " Fecha: "+ Emple.fechaIngreso, "OK");
+
+            EmplePage viewEmple = new EmplePage();
+            viewEmple.BindingContext = Emple;
+
+            await Navigation.PushAsync(viewEmple);
+        }
+        private async void toolMenu1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EmplePage());
+        }
+
+        private async void toolMenu2_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EmplePageCollection());
+        }
+
+        private async void toolMenu3_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MapPage());
         }
     }
 }

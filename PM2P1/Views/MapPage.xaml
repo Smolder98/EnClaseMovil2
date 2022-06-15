@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="PM2P1.Views.MapPage"
+             >
+
+    <!-- <ContentPage.Content>
+        <StackLayout>
+            <maps:Map x:Name="mapa"/>
+        </StackLayout>
+    </ContentPage.Content>-->
+
+    <Grid RowSpacing="10" ColumnSpacing="10">
+        <!-- <Label Grid.Row="0" Grid.Column="0" Text="Label 1" BackgroundColor="Orange"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="Label 2" BackgroundColor="Orange"/>
+        <Label Grid.Row="1" Grid.Column="0" Text="Label 3" BackgroundColor="Orange"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="Label 4" BackgroundColor="Orange"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Label 5" BackgroundColor="Orange"/>-->
+
+        <maps:Map x:Name="mapa" Grid.Row="0" Grid.Column="0"/>
+        
+    </Grid>
+    
+</ContentPage>

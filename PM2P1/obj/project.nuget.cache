@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "osWhvwbGKg8OblmcWPkFQXG4O3z7UKIF2aHR4Gi8HUeVPuRr2UowFiqqLAEdfFNb4rytm4Wdb4IVqaT+fscA+g==",
+  "dgSpecHash": "ey+HroXkHdpysb105Bv806T71BKSpu61ZwMRJ6SR354q2ROAIFjwubVC3T3tEkZTu9tcntbPVRcN6eeBskzF2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\alico\\source\\repos\\PM2P1\\PM2P1\\PM2P1.csproj",
   "expectedPackageFiles": [
@@ -15,8 +15,10 @@
     "C:\\Users\\alico\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\alico\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\alico\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\alico\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\alico\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\alico\\.nuget\\packages\\xamarin.forms\\5.0.0.2478\\xamarin.forms.5.0.0.2478.nupkg.sha512",
+    "C:\\Users\\alico\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2478\\xamarin.forms.maps.5.0.0.2478.nupkg.sha512"
   ],
   "logs": []
 }

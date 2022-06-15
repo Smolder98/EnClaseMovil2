@@ -5,6 +5,10 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem x:Name="toolMenu1" Text="Agregar" Order="Primary" Priority="0" Clicked="toolMenu1_Clicked" />
+        <ToolbarItem x:Name="toolMenu2" Text="Ver con img" Order="Primary" Priority="0" Clicked="toolMenu2_Clicked" />
+        <ToolbarItem x:Name="toolMenu3" Text="Mapa" Order="Primary" Priority="0" Clicked="toolMenu3_Clicked" />
+
+
 
     </ContentPage.ToolbarItems>
     

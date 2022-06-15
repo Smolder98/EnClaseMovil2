@@ -14,5 +14,6 @@ namespace PM2P1.Models
         public String edad { get; set; }
         public String genero { get; set; } 
         public DateTime fechaIngreso { get; set; }
+        public Byte[] foto { get; set; }
     }
 }

@@ -1,24 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Convertidor="clr-namespace:PM2P1.Convertidor"
              x:Class="PM2P1.Views.EmplePage">
-    <ContentPage.Content>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Convertidor:ByteArrayToImage x:Key="ByteToImage"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ScrollView>
+        
         <StackLayout>
+            
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
                 <Label Text="Bienvenido!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
 
+            
+            <Image x:Name="foto" Source="{Binding foto, Converter={StaticResource ByteToImage}}"  BackgroundColor="Aqua" WidthRequest="100" HeightRequest="200" />
+
             <Label  Text="ID" FontSize="Title" Margin="5, 0, 5, 0"/>
-            <Entry x:Name="txtid" Placeholder="Ingrese id" Keyboard="Plain" Margin="5, 0, 5, 0" />
+            <Entry x:Name="txtid" Placeholder="Ingrese id" Keyboard="Plain" Margin="5, 0, 5, 0" Text="{Binding id}" IsEnabled="False"/>
 
             <Label  Text="Nombre" FontSize="Title" Margin="5, 0, 5, 0"/>
-            <Entry x:Name="txtnombre" Placeholder="Ingrese nombre" Keyboard="Plain" Margin="5, 0, 5, 0" />
+            <Entry x:Name="txtnombre" Placeholder="Ingrese nombre" Keyboard="Plain" Margin="5, 0, 5, 0" Text="{Binding nombre}"/>
 
             <Label  Text="Edad" FontSize="Title" Margin="5, 0, 5, 0"/>
-            <Entry x:Name="txtedad" Placeholder="Ingrese edad" Keyboard="Numeric" Margin="5, 0, 5, 0" />
+            <Entry x:Name="txtedad" Placeholder="Ingrese edad" Keyboard="Numeric" Margin="5, 0, 5, 0" Text="{Binding edad}"/>
 
             <Label  Text="Genero" FontSize="Title" Margin="5, 0, 5, 0"/>
-            <Picker x:Name="txtgenero" Title="Seleccione un genero">
+            <Picker x:Name="txtgenero" Title="Seleccione un genero" SelectedItem="{Binding genero}"  >
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Masculino</x:String>
@@ -28,12 +42,14 @@
             </Picker>
 
             <Label  Text="Fecha de Nacimiento" FontSize="Title" Margin="5, 0, 5, 0"/>
-            <DatePicker x:Name="txtfecha" Format="D" VerticalOptions="CenterAndExpand" Visual="Material"/>
+            <DatePicker x:Name="txtfecha" Format="D" VerticalOptions="CenterAndExpand" Visual="Material" Date="{Binding fechaIngreso}"/>
 
             <Button x:Name="btnAdd" Text="Agregar"  Margin="5, 0, 5, 0" Clicked="btnAdd_Clicked" />
 
             <Button x:Name="btnDelete" Text="Eliminar"  Margin="5, 0, 5, 0" Clicked="btnDelete_Clicked" />
             
+            <Button x:Name="btnFoto" Text="Tomar foto"  Margin="5, 0, 5, 0" Clicked="btnFoto_Clicked" />
+            
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>
